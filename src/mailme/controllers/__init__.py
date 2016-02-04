@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from . import api
-from . import admin
+from . import web
 
-from .base import BaseController
-from .admin import AdminController
+from .api import *
+from .web import *
