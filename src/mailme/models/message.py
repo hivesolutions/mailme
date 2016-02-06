@@ -8,19 +8,14 @@ from . import base
 
 class Message(base.MailmeBase):
 
-    sender = dict(
-        type = str
-        
-    )
-    
+    sender = dict()
+
     receivers = dict(
         type = list
     )
-    
-    subject = dict(
-        type = str
-    )
-    
+
+    subject = dict()
+
     @classmethod
     def validate(cls):
         return super(Message, cls).validate() + [
