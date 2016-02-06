@@ -16,6 +16,8 @@ class Message(base.MailmeBase):
 
     subject = dict()
 
+    contents = dict()
+
     @classmethod
     def validate(cls):
         return super(Message, cls).validate() + [
@@ -25,8 +27,10 @@ class Message(base.MailmeBase):
 
     def send(self):
         base = appier_extras.admin.Base()
+        file_name = "base.html.tpl" if contents else "test.html.tpl"
         base.send_email(
-            "email/test.html.tpl",
+            "email/%s.html.tpl" % file_name,
             receivers = self.receivers,
-            subject = self.subject or "Test email"
+            subject = self.subject or "Test email",
+            contents = self.contents
         )
