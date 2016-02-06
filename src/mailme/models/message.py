@@ -29,7 +29,7 @@ class Message(base.MailmeBase):
         base = appier_extras.admin.Base()
         file_name = "base.html.tpl" if self.contents else "test.html.tpl"
         base.send_email(
-            "email/%s.html.tpl" % file_name,
+            "email/%s" % file_name,
             receivers = self.receivers,
             subject = self.subject or "Test email",
             contents = self.contents
