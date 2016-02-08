@@ -1,11 +1,19 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
+import time
+
 import appier
 
 import mailme
 
 class BaseApiController(appier.Controller):
+
+    @appier.route("/api/ping", "GET", json = True)
+    def ping(self):
+        return dict(
+            time = time.time()
+        )
 
     @appier.route("/api/send", "POST", json = True)
     def send(self):
