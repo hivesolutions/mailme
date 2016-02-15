@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM hivesolutions/alpine_dev:latest
 MAINTAINER Hive Solutions
 
 EXPOSE 8080
@@ -22,7 +22,6 @@ ADD requirements.txt /
 ADD extra.txt /
 ADD src /src
 
-RUN apt-get update && apt-get install -y -q python python-setuptools python-dev python-pip
-RUN pip install -r /requirements.txt && pip install -r /extra.txt && pip install --upgrade netius
+RUN pip3 install -r /requirements.txt && pip3 install -r /extra.txt && pip3 install --upgrade netius
 
-CMD ["/usr/bin/python", "/src/mailme/main.py"]
+CMD ["/usr/bin/python3", "/src/mailme/main.py"]
