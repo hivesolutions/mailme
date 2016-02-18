@@ -4,7 +4,7 @@ Simple REST HTTP service to send emails using a simple API.
 
 ## API Routes
 
-`POST /api/ping`
+#### POST /api/ping
 
 ```json
 {
