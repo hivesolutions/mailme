@@ -8,7 +8,7 @@ Simple REST HTTP service to send emails using a simple API.
 
 ```json
 {
-    time: 1455803800.5819314
+    "time" : 1455803800.5819314
 }
 ```
 
