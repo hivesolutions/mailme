@@ -16,6 +16,8 @@ class Message(base.MailmeBase):
 
     subject = dict()
 
+    title = dict()
+
     contents = dict()
 
     copyright = dict()
@@ -34,6 +36,7 @@ class Message(base.MailmeBase):
             "email/%s" % file_name,
             receivers = self.receivers,
             subject = self.subject or "Test email",
+            title = self.title or self.subject or "Test email",
             contents = self.contents,
             copyright = self.copyright
         )

@@ -1,5 +1,5 @@
 {% extends "email/layout.html.tpl" %}
-{% block title %}{{ subject|default("Test email", True) }}{% endblock %}
+{% block title %}{{ title|default(subject, True)|default("Test email", True) }}{% endblock %}
 {% block content %}
     <p>
         This is a simple test email for the Mailme infra-structure.<br/>

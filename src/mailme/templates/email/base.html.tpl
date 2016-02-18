@@ -1,5 +1,5 @@
 {% extends "email/layout.html.tpl" %}
-{% block title %}{{ subject|default("Test email", True) }}{% endblock %}
+{% block title %}{{ title|default(subject, True)|default("Test email", True) }}{% endblock %}
 {% block content %}
     {{ contents|safe }}
 {% endblock %}
