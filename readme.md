@@ -16,7 +16,7 @@ Simple REST HTTP service to send emails using a simple API.
 
 #### POST /api/send
 
-* `key` - The secret key to be used for validation/authorization
+* `skey` - The secret key to be used for validation/authorization
 
 ## API Structures
 
