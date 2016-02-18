@@ -18,6 +18,8 @@ class Message(base.MailmeBase):
 
     contents = dict()
 
+    copyright = dict()
+
     @classmethod
     def validate(cls):
         return super(Message, cls).validate() + [
@@ -32,5 +34,6 @@ class Message(base.MailmeBase):
             "email/%s" % file_name,
             receivers = self.receivers,
             subject = self.subject or "Test email",
-            contents = self.contents
+            contents = self.contents,
+            copyright = self.copyright
         )
