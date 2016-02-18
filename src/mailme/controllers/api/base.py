@@ -16,6 +16,7 @@ class BaseApiController(appier.Controller):
         )
 
     @appier.route("/api/send", "POST", json = True)
+    @appier.ensure(token = "admin")
     def send(self):
         message = mailme.Message.new()
         message.approve()
