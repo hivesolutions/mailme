@@ -26,6 +26,7 @@ Simple REST HTTP service to send emails using a simple API.
 {
     "receivers" : ["João Magalhães <joamag@hive.pt>", "geral@hive.pt"],
     "subject" : "Hello World",
+    "title" : "Hello Message",
     "contents" : "This is just a random <strong>Hello World</strong> ?",
     "copyright" : "Hive Solutions"
 }
