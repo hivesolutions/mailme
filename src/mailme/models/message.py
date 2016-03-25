@@ -29,9 +29,11 @@ class Message(base.MailmeBase):
             appier.not_empty("receivers")
         ]
 
-    def send(self):
+    def send(self, owner = None):
+        owner = owner or appier.get_app()
         file_name = "base.html.tpl" if self.contents else "test.html.tpl"
         appier_extras.admin.Base.send_email_g(
+            owner,
             "email/%s" % file_name,
             receivers = self.receivers,
             subject = self.subject or "Test email",
