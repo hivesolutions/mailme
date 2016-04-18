@@ -5,6 +5,6 @@ import appier
 
 class MailmeBase(appier.LocalModel):
 
-    id = dict(
+    id = appier.field(
         type = int
     )

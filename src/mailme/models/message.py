@@ -8,19 +8,19 @@ from . import base
 
 class Message(base.MailmeBase):
 
-    sender = dict()
+    sender = appier.field()
 
-    receivers = dict(
+    receivers = appier.field(
         type = list
     )
 
-    subject = dict()
+    subject = appier.field()
 
-    title = dict()
+    title = appier.field()
 
-    contents = dict()
+    contents = appier.field()
 
-    copyright = dict()
+    copyright = appier.field()
 
     @classmethod
     def validate(cls):
