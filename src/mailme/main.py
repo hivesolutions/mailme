@@ -19,3 +19,5 @@ class MailmeApp(appier.WebApp):
 if __name__ == "__main__":
     app = MailmeApp()
     app.serve()
+else:
+    __path__ = []
