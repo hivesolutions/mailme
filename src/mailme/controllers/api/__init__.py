@@ -3,4 +3,4 @@
 
 from . import base
 
-from .base import BaseApiController
+from .base import BaseAPIController
