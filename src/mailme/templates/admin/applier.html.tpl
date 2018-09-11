@@ -67,7 +67,7 @@
                 absolute = True
             ) %}
             <div class="url">
-                <a href="{{ url_absolute }}">{{ url_absolute }}</a>
+                <a href="{{ url_absolute }}" target="_blank">{{ url_absolute }}</a>
             </div>
             <iframe src="{{ url }}" style="width: 100%;height: 800px;border: none;box-sizing: border-box;"></iframe>
         </div>
