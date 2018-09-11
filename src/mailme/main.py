@@ -16,6 +16,13 @@ class MailmeApp(appier.WebApp):
             *args, **kwargs
         )
 
+    def start(self, *args, **kwargs):
+        appier.WebApp.start(self, *args, **kwargs)
+        self.admin_part.add_section_item(
+            "Applier", "admin.applier",
+            section = "Mailme"
+        )
+
 if __name__ == "__main__":
     app = MailmeApp()
     app.serve()
