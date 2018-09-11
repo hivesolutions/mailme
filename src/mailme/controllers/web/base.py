@@ -11,13 +11,13 @@ class BaseController(appier.Controller):
         mode = self.field("mode", "markdown")
         title = self.field("title")
         copyright = self.field("copyright")
+        logo_url = self.field("logo_url")
         contents = self.field("contents", mandatory = True)
-        markdown = self.field("markdown", True, cast = bool)
         return self.template(
             "email/base.html.tpl",
             mode = mode,
             title = title,
             copyright = copyright,
-            contents = contents,
-            markdown = markdown
+            logo_url = logo_url,
+            contents = contents
         )

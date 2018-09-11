@@ -24,6 +24,10 @@ class Message(base.MailmeBase):
 
     copyright = appier.field()
 
+    logo_url = appier.field(
+        meta = "url"
+    )
+
     @classmethod
     def validate(cls):
         return super(Message, cls).validate() + [
@@ -45,5 +49,6 @@ class Message(base.MailmeBase):
             title = self.title or self.subject or "Test email",
             contents = self.contents,
             copyright = self.copyright,
+            logo_url = self.logo_url or None,
             **kwargs
         )
