@@ -34,6 +34,8 @@ class Message(base.MailmeBase):
     def send(self, owner = None):
         owner = owner or appier.get_app()
         file_name = "base.html.tpl" if self.contents else "test.html.tpl"
+        kwargs = dict()
+        if self.sender: kwargs["sender"] = self.sender
         appier_extras.admin.Base.send_email_g(
             owner,
             "email/%s" % file_name,
@@ -42,5 +44,6 @@ class Message(base.MailmeBase):
             subject = self.subject or "Test email",
             title = self.title or self.subject or "Test email",
             contents = self.contents,
-            copyright = self.copyright
+            copyright = self.copyright,
+            **kwargs
         )
