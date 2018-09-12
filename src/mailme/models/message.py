@@ -14,6 +14,15 @@ class Message(base.MailmeBase):
         type = list
     )
 
+    inline = appier.field(
+        type = bool,
+        initial = True
+    )
+
+    theme = appier.field(
+        initial = "base"
+    )
+
     mode = appier.field()
 
     subject = appier.field()
@@ -44,6 +53,8 @@ class Message(base.MailmeBase):
             owner,
             "email/%s" % file_name,
             receivers = self.receivers,
+            inline = self.inline,
+            theme = self.theme or "base",
             mode = self.mode or "markdown",
             subject = self.subject or "Test email",
             title = self.title or self.subject or "Test email",
