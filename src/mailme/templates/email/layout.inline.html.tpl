@@ -9,7 +9,7 @@
         {% endblock %}
         <style type="text/css">
             {% block style %}
-                {% include "styles/" + style + ".css" with context %}
+                {% include "styles/" + style + ".css.tpl" with context %}
             {% endblock %}
         </style>
     </head>
