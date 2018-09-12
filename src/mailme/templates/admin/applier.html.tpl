@@ -2,6 +2,25 @@
 {% block title %}Email Applier{% endblock %}
 {% block name %}Email Applier{% endblock %}
 {% block content %}
+    {% if contents %}
+        {% set url = url_for(
+            "base.render",
+            mode = mode,
+            title = title,
+            copyright = copyright,
+            logo_url = logo_url,
+            contents = contents
+        ) %}
+        {% set url_absolute = url_for(
+            "base.render",
+            mode = mode,
+            title = title,
+            copyright = copyright,
+            logo_url = logo_url,
+            contents = contents,
+            absolute = True
+        ) %}
+    {% endif %}
     <form action="{{ url_for('admin.do_applier') }}" method="post" class="form">
         <div class="label">
             <label>Title</label>
@@ -45,30 +64,17 @@
                 </ul>
             </div>
         </div>
-        <span class="button" data-submit="true">Generate HTML</span>
+        <div class="buttons">
+            <span class="button button-color button-green" data-submit="true">Generate HTML</span>
+            {% if contents %}
+                <span class="or">or</span>
+                <a class="button button-color button-grey"
+                   href="{{ url_absolute }}" target="_blank">Open URL</a>
+          {% endif %}
+        </div>
     </form>
     {% if contents %}
         <div class="input">
-            {% set url = url_for(
-                "base.render",
-                mode = mode,
-                title = title,
-                copyright = copyright,
-                logo_url = logo_url,
-                contents = contents
-            ) %}
-            {% set url_absolute = url_for(
-                "base.render",
-                mode = mode,
-                title = title,
-                copyright = copyright,
-                logo_url = logo_url,
-                contents = contents,
-                absolute = True
-            ) %}
-            <div class="input">
-                <a href="{{ url_absolute }}" target="_blank">Open in browser</a>
-            </div>
             <iframe src="{{ url }}" style="width: 100%;height: 800px;border: none;box-sizing: border-box;"></iframe>
         </div>
     {% endif %}

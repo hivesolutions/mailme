@@ -79,7 +79,7 @@ ul li {
 
 .container > div {
     background-color: #ffffff;
-    border-bottom: #000000;
+    border-color: #000000;
     border-style: solid;
     border-width: 1px;
     box-shadow: 0px 0px 24px #000000;
