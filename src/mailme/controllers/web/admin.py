@@ -9,6 +9,7 @@ class AdminController(appier.Controller):
     @appier.ensure(token = "admin", context = "admin")
     def applier(self):
         mode = self.field("mode", "markdown")
+        style = self.field("style", "base")
         title = self.field("title")
         copyright = self.field("copyright")
         logo_url = self.field("logo_url")
@@ -17,6 +18,7 @@ class AdminController(appier.Controller):
             "admin/applier.html.tpl",
             section = "section:mailme:applier",
             mode = mode,
+            style = style,
             title = title,
             copyright = copyright,
             logo_url = logo_url,
@@ -27,6 +29,7 @@ class AdminController(appier.Controller):
     @appier.ensure(token = "admin", context = "admin")
     def do_applier(self):
         mode = self.field("mode", "markdown")
+        style = self.field("style", "base")
         title = self.field("title")
         copyright = self.field("copyright")
         logo_url = self.field("logo_url")
@@ -35,6 +38,7 @@ class AdminController(appier.Controller):
             "admin/applier.html.tpl",
             section = "section:mailme:applier",
             mode = mode,
+            style = style,
             title = title,
             copyright = copyright,
             logo_url = logo_url,

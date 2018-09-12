@@ -6,6 +6,7 @@
         {% set url = url_for(
             "base.render",
             mode = mode,
+            style = style,
             title = title,
             copyright = copyright,
             logo_url = logo_url,
@@ -14,6 +15,7 @@
         {% set url_absolute = url_for(
             "base.render",
             mode = mode,
+            style = style,
             title = title,
             copyright = copyright,
             logo_url = logo_url,
@@ -22,6 +24,12 @@
         ) %}
     {% endif %}
     <form action="{{ url_for('admin.do_applier') }}" method="post" class="form">
+        <div class="label">
+            <label>Style</label>
+        </div>
+        <div class="input">
+             <input name="style" type="text" class="text-field" value="{{ style|default('base', True) }}" />
+        </div>
         <div class="label">
             <label>Title</label>
         </div>
