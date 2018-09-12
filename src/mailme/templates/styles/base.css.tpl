@@ -78,9 +78,7 @@ ul li {
 
 .container > div {
     background-color: #ffffff;
-    border-color: #d9d9d9;
-    border-style: solid;
-    border-width: 1px;
+    border: 1px solid #d9d9d9;
     margin: 0px auto 0px auto;
     padding: 42px 72px 42px 72px;
     width: 520px;
