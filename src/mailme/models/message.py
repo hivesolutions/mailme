@@ -19,7 +19,7 @@ class Message(base.MailmeBase):
         initial = True
     )
 
-    theme = appier.field(
+    style = appier.field(
         initial = "base"
     )
 
@@ -67,7 +67,7 @@ class Message(base.MailmeBase):
             "email/%s" % file_name,
             receivers = self.receivers,
             inline = self.inline,
-            theme = self.theme or "base",
+            style = self.style or "base",
             mode = self.mode or "markdown",
             subject = self.subject or "Test email",
             title = self.title or self.subject or "Test email",
