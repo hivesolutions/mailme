@@ -23,9 +23,13 @@ class Message(base.MailmeBase):
         initial = "base"
     )
 
-    mode = appier.field()
+    mode = appier.field(
+        initial = "markdown"
+    )
 
-    subject = appier.field()
+    subject = appier.field(
+        initial = "Test email"
+    )
 
     title = appier.field()
 
@@ -46,9 +50,18 @@ class Message(base.MailmeBase):
 
     def send(self, owner = None):
         owner = owner or appier.get_app()
-        file_name = "base.html.tpl" if self.contents else "test.html.tpl"
+
+        # determines the right template so be used for the email
+        # generation taking into account if this is just a test
+        # email or a "real" one and if the inline engine is active
+        if self.contents:
+            file_name = "base.inline.html.tpl" if self.inline else "base.html.tpl"
+        else:
+            file_name = "test.html.tpl"
+
         kwargs = dict()
         if self.sender: kwargs["sender"] = self.sender
+
         appier_extras.admin.Base.send_email_g(
             owner,
             "email/%s" % file_name,
