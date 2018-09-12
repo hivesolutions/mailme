@@ -1,6 +1,6 @@
 {% extends "admin/admin.fluid.html.tpl" %}
-{% block title %}Email Applier{% endblock %}
-{% block name %}Email Applier{% endblock %}
+{% block title %}Applier{% endblock %}
+{% block name %}Applier{% endblock %}
 {% block content %}
     {% if contents %}
         {% set url = url_for(
