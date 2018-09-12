@@ -70,7 +70,7 @@
                 <span class="or">or</span>
                 <a class="button button-color button-grey"
                    href="{{ url_absolute }}" target="_blank">Open URL</a>
-          {% endif %}
+            {% endif %}
         </div>
     </form>
     {% if contents %}
