@@ -45,7 +45,7 @@
                 </ul>
             </div>
         </div>
-        <span class="button" data-submit="true">Submit Options</span>
+        <span class="button" data-submit="true">Generate HTML</span>
     </form>
     {% if contents %}
         <div class="input">
