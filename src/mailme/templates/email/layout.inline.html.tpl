@@ -15,10 +15,10 @@
     </head>
     <body>
         <div class="container">
-            <div style="">
+            <div>
                 {% if logo_url %}
                     <div class="logo-url">
-                        <img src="{{ logo_url }}" alt="logo" style="max-width:280px;" />
+                        <img src="{{ logo_url }}" alt="logo" />
                     </div>
                 {% endif %}
                 <div class="content">
