@@ -9,6 +9,15 @@ body {
     text-align: left;
 }
 
+body > .content {
+    background-color: #edece4;
+    color: #4d4d4d;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: left;
+}
+
 h1 {
     color: #000000;
     font-size: 28px;
