@@ -81,8 +81,12 @@ code {
     margin-top: 24px;
 }
 
+.title.no-margin {
+    margin-bottom: 12px;
+}
+
 .subtitle {
-    margin-top: -10px;
+    margin-top: 0px;
     font-size: 20px;
 }
 

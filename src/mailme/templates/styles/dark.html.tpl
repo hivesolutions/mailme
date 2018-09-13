@@ -82,8 +82,12 @@ code {
     text-align: center;
 }
 
+.title.no-margin {
+    margin-bottom: 12px;
+}
+
 .subtitle {
-    margin-top: -10px;
+    margin-top: 0px;
     text-align: center;
     font-size: 20px;
 }

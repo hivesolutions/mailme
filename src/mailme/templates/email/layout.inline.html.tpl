@@ -21,7 +21,7 @@
                     </div>
                 {% endif %}
                 <div class="content">
-                    <h1 class="title">{{ self.title() }}</h1>
+                    <h1 class="title {% block title_cls %}{% endblock %}">{{ self.title() }}</h1>
                     {% block content %}{% endblock %}
                 </div>
                 <div class="footer">

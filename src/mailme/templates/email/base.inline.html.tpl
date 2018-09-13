@@ -1,5 +1,6 @@
 {% extends "email/layout.inline.html.tpl" %}
 {% block title %}{{ title|default(subject, True)|default("Test email", True) }}{% endblock %}
+{% block title_cls %}{{ super() }}{% if subtitle %}no-margin{% endif %}{% endblock %}
 {% block content %}
     {% block subtitle %}
         {% if subtitle %}<h2 class="subtitle">{{ subtitle }}</h2>{% endif %}
