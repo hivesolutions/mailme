@@ -73,6 +73,8 @@ ul li {
 
 code {
     background-color: #f4f4f4;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-size: 85%;
     padding: 2px 6px 2px 6px;
 }
 
