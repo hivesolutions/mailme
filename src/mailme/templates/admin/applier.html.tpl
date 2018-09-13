@@ -60,7 +60,7 @@
             <label>Contents</label>
         </div>
         <div class="input">
-            <textarea name="contents" class="text-area">{{ contents|default("", True) }}</textarea>
+            <textarea name="contents" class="text-area" style="height: 260px;">{{ contents|default("", True) }}</textarea>
         </div>
         <div class="label">
             <label>Mode</label>

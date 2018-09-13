@@ -82,6 +82,10 @@ code {
     padding: 2px 6px 2px 6px;
 }
 
+img {
+    max-width: 100%;
+}
+
 .title {
     margin-bottom: 24px;
     margin-top: 24px;
