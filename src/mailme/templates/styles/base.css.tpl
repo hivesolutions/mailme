@@ -7,6 +7,7 @@ body {
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
     text-align: left;
+    word-break: break-word;
 }
 
 body > .container {
@@ -88,9 +89,11 @@ code {
 .container > div {
     background-color: #ffffff;
     border: 1px solid #d9d9d9;
+    box-sizing: border-box;
     margin: 0px auto 0px auto;
+    max-width: 100%;
     padding: 42px 72px 42px 72px;
-    width: 520px;
+    width: 664px;
 }
 
 .footer {
@@ -107,4 +110,29 @@ code {
 
 .logo-url > img {
     max-width: 280px;
+}
+
+@media only screen and (max-device-width: 480px) {
+    body {
+        background-color: #ffffff;
+    }
+
+    body > .container {
+        background-color: #ffffff;
+    }
+
+    .container {
+        padding: 0px 0px 0px 0px;
+    }
+
+    .container > div {
+        border: none;
+        max-width: 100%;
+        padding: 0px 24px 0px 24px;
+        width: 480px;
+    }
+
+    .logo-url > img {
+        max-width: 100%;
+    }
 }
