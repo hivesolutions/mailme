@@ -25,7 +25,7 @@
             absolute = True
         ) %}
     {% endif %}
-    <form action="{{ url_for('admin.do_applier') }}" method="post" class="form">
+    <form action="{{ url_for('admin.do_applier') }}" method="get" class="form">
         <div class="label">
             <label>Style</label>
         </div>
