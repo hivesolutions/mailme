@@ -52,6 +52,14 @@ h4 {
     margin-top: 20px;
 }
 
+h5 {
+    color: #1d1d1d;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    margin-top: 16px;
+}
+
 a {
     color: #1b75bb;
     padding-bottom: 1px;
