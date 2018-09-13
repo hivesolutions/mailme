@@ -62,6 +62,10 @@ a:hover {
     border-bottom: 1px solid #1b75bb;
 }
 
+em {
+    letter-spacing: 0.3px;
+}
+
 ul {
     margin: 0px 0px 0px 0px;
     padding-left: 16px;
