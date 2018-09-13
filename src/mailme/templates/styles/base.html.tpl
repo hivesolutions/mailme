@@ -134,9 +134,5 @@ code {
         padding: 0px 24px 0px 24px !important;
         width: 480px !important;
     }
-
-    .logo-url > img {
-        max-width: 100% !important;
-    }
 }
 </style>
