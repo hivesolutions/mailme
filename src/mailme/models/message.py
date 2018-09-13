@@ -33,6 +33,8 @@ class Message(base.MailmeBase):
 
     title = appier.field()
 
+    subtitle = appier.field()
+
     contents = appier.field()
 
     copyright = appier.field()
@@ -71,6 +73,7 @@ class Message(base.MailmeBase):
             mode = self.mode or "markdown",
             subject = self.subject or "Test email",
             title = self.title or self.subject or "Test email",
+            subtitle = self.subtitle,
             contents = self.contents,
             copyright = self.copyright,
             logo_url = self.logo_url or None,

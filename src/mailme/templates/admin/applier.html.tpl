@@ -8,6 +8,7 @@
             mode = mode,
             style = style,
             title = title,
+            subtitle = subtitle,
             copyright = copyright,
             logo_url = logo_url,
             contents = contents
@@ -17,6 +18,7 @@
             mode = mode,
             style = style,
             title = title,
+            subtitle = subtitle,
             copyright = copyright,
             logo_url = logo_url,
             contents = contents,
@@ -35,6 +37,12 @@
         </div>
         <div class="input">
              <input name="title" type="text" class="text-field" value="{{ title|default('', True) }}" />
+        </div>
+        <div class="label">
+            <label>Sub-Title</label>
+        </div>
+        <div class="input">
+             <input name="subtitle" type="text" class="text-field" value="{{ subtitle|default('', True) }}" />
         </div>
         <div class="label">
             <label>Copyright</label>

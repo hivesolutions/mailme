@@ -82,6 +82,12 @@ code {
     text-align: center;
 }
 
+.subtitle {
+    margin-top: -10px;
+    text-align: center;
+    font-size: 20px;
+}
+
 .container {
     background-color: #4d4d4d;
     margin: 0px auto 0px auto;

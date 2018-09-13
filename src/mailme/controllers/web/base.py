@@ -12,6 +12,7 @@ class BaseController(appier.Controller):
         style = self.field("style", "base")
         mode = self.field("mode", "markdown")
         title = self.field("title")
+        subtitle = self.field("subtitle")
         copyright = self.field("copyright")
         logo_url = self.field("logo_url")
         contents = self.field("contents", mandatory = True)
@@ -21,6 +22,7 @@ class BaseController(appier.Controller):
             style = style,
             mode = mode,
             title = title,
+            subtitle = subtitle,
             copyright = copyright,
             logo_url = logo_url,
             contents = contents

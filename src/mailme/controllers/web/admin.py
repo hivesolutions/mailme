@@ -11,6 +11,7 @@ class AdminController(appier.Controller):
         mode = self.field("mode", "markdown")
         style = self.field("style", "base")
         title = self.field("title")
+        subtitle = self.field("subtitle")
         copyright = self.field("copyright")
         logo_url = self.field("logo_url")
         contents = self.field("contents")
@@ -20,6 +21,7 @@ class AdminController(appier.Controller):
             mode = mode,
             style = style,
             title = title,
+            subtitle = subtitle,
             copyright = copyright,
             logo_url = logo_url,
             contents = contents
@@ -31,6 +33,7 @@ class AdminController(appier.Controller):
         mode = self.field("mode", "markdown")
         style = self.field("style", "base")
         title = self.field("title")
+        subtitle = self.field("subtitle")
         copyright = self.field("copyright")
         logo_url = self.field("logo_url")
         contents = self.field("contents", mandatory = True)
@@ -40,6 +43,7 @@ class AdminController(appier.Controller):
             mode = mode,
             style = style,
             title = title,
+            subtitle = subtitle,
             copyright = copyright,
             logo_url = logo_url,
             contents = contents

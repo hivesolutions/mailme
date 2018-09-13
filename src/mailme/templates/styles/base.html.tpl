@@ -81,6 +81,11 @@ code {
     margin-top: 24px;
 }
 
+.subtitle {
+    margin-top: -10px;
+    font-size: 20px;
+}
+
 .container {
     background-color: #edece4;
     margin: 0px auto 0px auto;
