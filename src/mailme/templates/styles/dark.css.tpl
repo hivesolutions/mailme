@@ -56,6 +56,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    border-bottom: 1px solid #1b75bb;
+}
+
 ul {
     margin: 0px 0px 0px 0px;
     padding-left: 16px;
