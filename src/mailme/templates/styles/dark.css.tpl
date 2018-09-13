@@ -1,7 +1,7 @@
 body {
     background-color: #4d4d4d;
-    color: #4d4d4d;
-    font-family: Helvetica, Arial, sans-serif;
+    color: #1d1d1d;
+    font-family: system, -apple-system, -webkit-system-font, SFNSText, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 24px;
     margin: 0px 0px 0px 0px;
@@ -11,15 +11,15 @@ body {
 
 body > .container {
     background-color: #4d4d4d;
-    color: #4d4d4d;
-    font-family: Helvetica, Arial, sans-serif;
+    color: #1d1d1d;
+    font-family: system, -apple-system, -webkit-system-font, SFNSText, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 24px;
     text-align: left;
 }
 
 h1 {
-    color: #000000;
+    color: #1d1d1d;
     font-size: 28px;
     font-weight: 500;
     margin-bottom: 26px;
@@ -27,7 +27,7 @@ h1 {
 }
 
 h2 {
-    color: #000000;
+    color: #1d1d1d;
     font-size: 22px;
     font-weight: 500;
     margin-bottom: 20px;
@@ -35,7 +35,7 @@ h2 {
 }
 
 h3 {
-    color: #000000;
+    color: #1d1d1d;
     font-size: 20px;
     font-weight: 500;
     margin-bottom: 16px;
@@ -43,7 +43,7 @@ h3 {
 }
 
 h4 {
-    color: #000000;
+    color: #1d1d1d;
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 10px;
@@ -62,7 +62,12 @@ ul {
 }
 
 ul li {
-    line-height: 26px;
+    margin: 6px 0px 6px 0px;
+}
+
+code {
+    background-color: #f4f4f4;
+    padding: 2px 6px 2px 6px;
 }
 
 .title {

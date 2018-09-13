@@ -1,7 +1,7 @@
 body {
     background-color: #edece4;
-    color: #4d4d4d;
-    font-family: Helvetica, Arial, sans-serif;
+    color: #1d1d1d;
+    font-family: system, -apple-system, -webkit-system-font, SFNSText, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 24px;
     margin: 0px 0px 0px 0px;
@@ -11,8 +11,8 @@ body {
 
 body > .container {
     background-color: #edece4;
-    color: #4d4d4d;
-    font-family: Helvetica, Arial, sans-serif;
+    color: #1d1d1d;
+    font-family: system, -apple-system, -webkit-system-font, SFNSText, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 24px;
     text-align: left;
@@ -62,7 +62,12 @@ ul {
 }
 
 ul li {
-    line-height: 26px;
+    margin: 6px 0px 6px 0px;
+}
+
+code {
+    background-color: #f4f4f4;
+    padding: 2px 6px 2px 6px;
 }
 
 .title {
