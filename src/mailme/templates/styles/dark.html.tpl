@@ -118,8 +118,8 @@ img {
 
 .container > .paper {
     background-color: #ffffff;
-    border: 1px solid #000000;
-    box-shadow: 0px 0px 24px #000000;
+    border: 1px solid rgba(0, 0, 0, 0.65);
+    box-shadow: 0px 0px 24px rgba(60, 60, 60, 0.65);
     box-sizing: border-box;
     margin: 0px auto 0px auto;
     max-width: 100%;
