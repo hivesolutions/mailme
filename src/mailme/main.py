@@ -23,6 +23,15 @@ class MailmeApp(appier.WebApp):
             section = "Mailme"
         )
 
+    def _version(self):
+        return "0.1.0"
+
+    def _description(self) -> str:
+        return "Mailme"
+
+    def _observations(self) -> str:
+        return "Simple Email Sender API"
+
 if __name__ == "__main__":
     app = MailmeApp()
     app.serve()

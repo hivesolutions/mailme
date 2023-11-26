@@ -10,6 +10,7 @@ class AdminController(appier.Controller):
     def applier(self):
         mode = self.field("mode", "markdown")
         style = self.field("style", "base")
+        attachments = self.field("attachments", [], cast = list)
         title = self.field("title")
         subtitle = self.field("subtitle")
         copyright = self.field("copyright")
@@ -20,6 +21,7 @@ class AdminController(appier.Controller):
             section = "section:mailme:applier",
             mode = mode,
             style = style,
+            attachments = attachments,
             title = title,
             subtitle = subtitle,
             copyright = copyright,
@@ -32,6 +34,7 @@ class AdminController(appier.Controller):
     def do_applier(self):
         mode = self.field("mode", "markdown")
         style = self.field("style", "base")
+        attachments = self.field("attachments", [], cast = list)
         title = self.field("title")
         subtitle = self.field("subtitle")
         copyright = self.field("copyright")
@@ -42,6 +45,7 @@ class AdminController(appier.Controller):
             section = "section:mailme:applier",
             mode = mode,
             style = style,
+            attachments = attachments,
             title = title,
             subtitle = subtitle,
             copyright = copyright,

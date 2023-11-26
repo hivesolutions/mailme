@@ -11,6 +11,7 @@ class BaseController(appier.Controller):
         inline = self.field("inline", True, cast = bool)
         style = self.field("style", "base")
         mode = self.field("mode", "markdown")
+        attachments = self.field("attachments", [], cast = list)
         title = self.field("title")
         subtitle = self.field("subtitle")
         copyright = self.field("copyright")
@@ -21,6 +22,7 @@ class BaseController(appier.Controller):
             template,
             style = style,
             mode = mode,
+            attachments = attachments,
             title = title,
             subtitle = subtitle,
             copyright = copyright,

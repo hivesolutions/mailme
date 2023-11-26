@@ -31,6 +31,10 @@ class Message(base.MailmeBase):
         initial = "Test email"
     )
 
+    attachments = appier.field(
+        type = appier.Files
+    )
+
     title = appier.field()
 
     subtitle = appier.field()
@@ -72,6 +76,7 @@ class Message(base.MailmeBase):
             style = self.style or "base",
             mode = self.mode or "markdown",
             subject = self.subject or "Test email",
+            attachments = self.attachments if self.attachments else [],
             title = self.title or self.subject or "Test email",
             subtitle = self.subtitle,
             contents = self.contents,
