@@ -12,6 +12,16 @@ class Message(base.MailmeBase):
 
     receivers = appier.field(type=list)
 
+    cc = appier.field(type=list, initial=[])
+
+    bcc = appier.field(type=list, initial=[])
+
+    reply_to = appier.field(type=list, initial=[])
+
+    return_path = appier.field()
+
+    priority = appier.field()
+
     inline = appier.field(type=bool, initial=True)
 
     style = appier.field(initial="base")
@@ -58,6 +68,11 @@ class Message(base.MailmeBase):
             owner,
             "email/%s" % file_name,
             receivers=self.receivers,
+            cc=self.cc,
+            bcc=self.bcc,
+            reply_to=self.reply_to,
+            return_path=self.return_path,
+            priority=self.priority,
             inline=self.inline,
             style=self.style or "base",
             mode=self.mode or "markdown",
