@@ -25,7 +25,7 @@
                     {% block content %}{% endblock %}
                 </div>
                 <div class="footer">
-                    &copy; {{ copyright|default("2008-2020 Hive Solutions", True) }} &middot; All rights reserved<br/>
+                    &copy; {{ copyright|default("2008-2024 Hive Solutions", True) }} &middot; All rights reserved<br/>
                 </div>
             </div>
         </div>
