@@ -17,6 +17,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
+*
+
+## [0.1.2] - 2024-01-17
+
+### Fixed
+
 * Extra `lib` based deployment
 
 ## [0.1.1] - 2024-01-17
