@@ -3,8 +3,7 @@
 
 import appier
 
+
 class MailmeBase(appier.LocalModel):
 
-    id = appier.field(
-        type = int
-    )
+    id = appier.field(type=int)

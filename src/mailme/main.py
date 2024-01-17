@@ -4,24 +4,16 @@
 import appier
 import appier_extras
 
-class MailmeApp(appier.WebApp):
 
+class MailmeApp(appier.WebApp):
     def __init__(self, *args, **kwargs):
         appier.WebApp.__init__(
-            self,
-            name = "mailme",
-            parts = (
-                appier_extras.AdminPart,
-            ),
-            *args, **kwargs
+            self, name="mailme", parts=(appier_extras.AdminPart,), *args, **kwargs
         )
 
     def start(self, *args, **kwargs):
         appier.WebApp.start(self, *args, **kwargs)
-        self.admin_part.add_section_item(
-            "Applier", "admin.applier",
-            section = "Mailme"
-        )
+        self.admin_part.add_section_item("Applier", "admin.applier", section="Mailme")
 
     def _version(self):
         return "0.1.0"
@@ -31,6 +23,7 @@ class MailmeApp(appier.WebApp):
 
     def _observations(self) -> str:
         return "Simple Email Sender API"
+
 
 if __name__ == "__main__":
     app = MailmeApp()
