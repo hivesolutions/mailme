@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-* More parameters to the `Message` structure
+*
 
 ### Changed
 
@@ -18,6 +18,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 *
+
+## [0.1.3] - 2024-01-17
+
+### Added
+
+* More parameters to the `Message` structure
 
 ## [0.1.2] - 2024-01-17
 
