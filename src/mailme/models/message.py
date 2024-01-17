@@ -8,7 +8,6 @@ from . import base
 
 
 class Message(base.MailmeBase):
-
     sender = appier.field()
 
     receivers = appier.field(type=list)
