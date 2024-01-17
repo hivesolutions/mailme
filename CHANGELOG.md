@@ -13,11 +13,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-* Ran restructure to allow `black` code format
+*
 
 ### Fixed
 
 *
+
+## [0.1.1] - 2024-01-17
+
+### Changed
+
+* Ran restructure to allow `black` code format
 
 ## [0.1.0] - 2023-11-26
 
