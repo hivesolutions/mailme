@@ -18,10 +18,10 @@ class MailmeApp(appier.WebApp):
     def _version(self):
         return "0.1.0"
 
-    def _description(self) -> str:
+    def _description(self):
         return "Mailme"
 
-    def _observations(self) -> str:
+    def _observations(self):
         return "Simple Email Sender API"
 
 
