@@ -38,6 +38,10 @@ class Message(base.MailmeBase):
 
     contents = appier.field()
 
+    html = appier.field()
+
+    plain = appier.field()
+
     copyright = appier.field()
 
     logo_url = appier.field(meta="url")
@@ -81,6 +85,8 @@ class Message(base.MailmeBase):
             title=self.title or self.subject or "Test email",
             subtitle=self.subtitle,
             contents=self.contents,
+            html=self.html,
+            plain=self.plain,
             copyright=self.copyright,
             logo_url=self.logo_url or None,
             **kwargs
