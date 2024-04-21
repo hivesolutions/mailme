@@ -16,7 +16,7 @@ class MailmeApp(appier.WebApp):
         self.admin_part.add_section_item("Applier", "admin.applier", section="Mailme")
 
     def _version(self):
-        return "0.1.3"
+        return "0.1.4"
 
     def _description(self):
         return "Mailme"
