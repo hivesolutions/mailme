@@ -6,4 +6,5 @@ session.shelve*
 
 /.vscode/settings.json
 
+/.env
 /.venv
