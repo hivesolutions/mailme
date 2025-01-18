@@ -1,6 +1,25 @@
 # [Mailme 📬](http://mailme.hive.pt)
 
-Simple REST HTTP service to send emails using a simple API.
+**Mailme is a powerful and simple REST HTTP service that acts as an email gateway, allowing programmatic sending of emails through an easy-to-use API.** Whether you're automating workflows, sending notifications, or delivering personalized messages, Mailme provides the tools you need for efficient and reliable email communication.
+
+## Description
+
+Mailme is a lightweight and versatile email gateway designed to simplify the process of sending emails programmatically. Built as a RESTful HTTP service, it offers a clean and intuitive API for developers to integrate email functionality into their applications with minimal effort. 
+
+This service is particularly useful for automated workflows, such as sending invoices, notifications, and other email-based communications. Mailme ensures flexibility by supporting multiple recipients, custom subject lines, rich HTML content, and personalization options. 
+
+By offloading email handling to a dedicated gateway, Mailme helps developers focus on core application logic while providing reliable email delivery. Its extensible architecture and simple configuration make it an excellent choice for businesses and projects of all sizes.
+
+### Key Features
+
+- **Simple REST API**: Easy-to-use endpoints for sending emails and testing service availability.
+- **Rich Content Support**: Send plain text, HTML, or mixed content emails with embedded formatting.
+- **Multi-Recipient Capability**: Support for multiple recipients, including personalized "to", "cc" and "bcc" fields.
+- **Security**: Includes secret key validation to ensure authorized access.
+- **Customizable Templates**: Define subject lines, titles, and other dynamic email components.
+- **Open Source**: Fully open-sourced under the Apache License 2.0, allowing for community contributions and modifications.
+
+Mailme seamlessly integrates into existing systems and workflows, making it a go-to solution for developers in need of an efficient and reliable email gateway.
 
 ## API
 
