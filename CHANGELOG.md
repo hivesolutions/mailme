@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-* Added support for `style_css` allowing for custom CSS styles
+*
 
 ### Changed
 
@@ -18,6 +18,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 *
+
+## [0.1.5] - 2025-03-04
+
+### Added
+
+* Added support for `style_css` allowing for custom CSS styles
 
 ## [0.1.4] - 2024-04-21
 
