@@ -26,6 +26,8 @@ class Message(base.MailmeBase):
 
     style = appier.field(initial="base")
 
+    style_css = appier.field(initial="")
+
     mode = appier.field(initial="markdown")
 
     subject = appier.field(initial="Test email")
@@ -79,6 +81,7 @@ class Message(base.MailmeBase):
             priority=self.priority,
             inline=self.inline,
             style=self.style or "base",
+            style_css=self.style_css or "",
             mode=self.mode or "markdown",
             subject=self.subject or "Test email",
             attachments=self.attachments if self.attachments else [],
