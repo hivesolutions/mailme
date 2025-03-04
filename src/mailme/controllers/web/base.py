@@ -10,6 +10,7 @@ class BaseController(appier.Controller):
     def render(self):
         inline = self.field("inline", True, cast=bool)
         style = self.field("style", "base")
+        style_css = self.field("style_css", "")
         mode = self.field("mode", "markdown")
         attachments = self.field("attachments", [], cast=list)
         title = self.field("title")
@@ -21,6 +22,7 @@ class BaseController(appier.Controller):
         return self.template(
             template,
             style=style,
+            style_css=style_css,
             mode=mode,
             attachments=attachments,
             title=title,

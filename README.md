@@ -4,9 +4,9 @@
 
 ## Description
 
-Mailme is a lightweight and versatile email gateway designed to simplify the process of sending emails programmatically. Built as a RESTful HTTP service, it offers a clean and intuitive API for developers to integrate email functionality into their applications with minimal effort. 
+Mailme is a lightweight and versatile email gateway designed to simplify the process of sending emails programmatically. Built as a RESTful HTTP service, it offers a clean and intuitive API for developers to integrate email functionality into their applications with minimal effort.
 
-This service is particularly useful for automated workflows, such as sending invoices, notifications, and other email-based communications. Mailme ensures flexibility by supporting multiple recipients, custom subject lines, rich HTML content, and personalization options. 
+This service is particularly useful for automated workflows, such as sending invoices, notifications, and other email-based communications. Mailme ensures flexibility by supporting multiple recipients, custom subject lines, rich HTML content, and personalization options.
 
 By offloading email handling to a dedicated gateway, Mailme helps developers focus on core application logic while providing reliable email delivery. Its extensible architecture and simple configuration make it an excellent choice for businesses and projects of all sizes.
 

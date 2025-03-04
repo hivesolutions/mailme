@@ -7,6 +7,7 @@
             "base.render",
             mode = mode,
             style = style,
+            style_css = style_css,
             title = title,
             subtitle = subtitle,
             copyright = copyright,
@@ -17,6 +18,7 @@
             "base.render",
             mode = mode,
             style = style,
+            style_css = style_css,
             title = title,
             subtitle = subtitle,
             copyright = copyright,
@@ -31,6 +33,12 @@
         </div>
         <div class="input">
              <input name="style" type="text" class="text-field" value="{{ style|default('base', True) }}" />
+        </div>
+        <div class="label">
+            <label>Style CSS</label>
+        </div>
+        <div class="input">
+            <textarea name="style_css" class="text-area" style="height: 260px;">{{ style_css|default("", True) }}</textarea>
         </div>
         <div class="label">
             <label>Title</label>

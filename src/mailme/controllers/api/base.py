@@ -28,6 +28,7 @@ class BaseAPIController(appier.Controller):
         receivers = self.field("receivers", cast=list)
         mode = self.field("mode", "markdown")
         style = self.field("style", "base")
+        style_css = self.field("style_css", "")
         attachments = self.field("attachments", [], cast=list)
         title = self.field("title")
         subtitle = self.field("subtitle")
@@ -43,6 +44,8 @@ class BaseAPIController(appier.Controller):
             data["mode"] = mode
         if style:
             data["style"] = style
+        if style_css:
+            data["style_css"] = style_css
         if attachments:
             data["attachments"] = attachments
         if title:

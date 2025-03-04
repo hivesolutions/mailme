@@ -10,6 +10,7 @@
         {% endblock %}
         {% block style %}
             {% include "styles/" + style + ".html.tpl" with context %}
+            {% include "styles/extra.html.tpl" with context %}
         {% endblock %}
     </head>
     <body>
