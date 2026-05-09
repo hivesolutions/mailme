@@ -9,11 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-*
+* New `dockerx.yml` GitHub Actions workflow that builds multi-arch (`linux/amd64`, `linux/arm64/v8`) images, pushes to `hivesolutions/mailme` on Docker Hub with provenance and SBOM, and triggers the `mailme` deployment in `infra-bemisc` on tag pushes
 
 ### Changed
 
-*
+* Modernized `Dockerfile`: switched base image to `python:alpine`, converted all `ENV` directives to the `KEY=VALUE` form, collapsed the install steps into a single `RUN` with `--no-cache-dir`, and dropped privileges to a non-root `mailme` user
+* Bumped `actions/checkout` from `v4` to `v6` across all workflows
 
 ### Fixed
 
