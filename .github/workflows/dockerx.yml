@@ -49,6 +49,6 @@ jobs:
         with:
           repository: hivesolutions/infra-bemisc
           service: mailme
-          group: mail
+          group: apps
           tag: ${{ github.ref_name }}
           token: ${{ secrets.INFRA_DEPLOY_PAT }}
