@@ -13,7 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-*
+* Modernize deploy workflow: target Python `3.14` (drop end-of-life `2.7`), replace `python setup.py test` with `pytest`, and switch the release artifact build from `setup.py sdist bdist_wheel` to PEP 517 `python -m build`
 
 ### Fixed
 
