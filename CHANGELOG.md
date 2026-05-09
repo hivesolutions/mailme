@@ -13,11 +13,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-* Move the `mailme` deploy in `infra-bemisc` from the `mail` group to the `apps` group in `dockerx.yml`
+*
 
 ### Fixed
 
 *
+
+## [0.1.8] - 2026-05-09
+
+### Changed
+
+* Move the `mailme` deploy in `infra-bemisc` from the `mail` group to the `apps` group in `dockerx.yml`
 
 ## [0.1.7] - 2026-05-09
 
