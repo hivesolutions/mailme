@@ -6,7 +6,7 @@ import setuptools
 
 setuptools.setup(
     name="mailme-py",
-    version="0.1.6",
+    version="0.1.7",
     author="Hive Solutions Lda.",
     author_email="development@hive.pt",
     description="Mailme",
