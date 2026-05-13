@@ -12,7 +12,7 @@ jobs:
   build:
     name: Build
     timeout-minutes: 30
-    runs-on: self-hosted
+    runs-on: [self-hosted, ubuntu, latest]
     steps:
       - name: Checkout code from repository
         uses: actions/checkout@v6
