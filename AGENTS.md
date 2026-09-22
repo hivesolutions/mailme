@@ -36,7 +36,7 @@ python setup.py test
 - Make sure to use Python type annotations in the code.
 - Try to use as much f-strings as possible when formatting strings.
 - Prefer `from x import y` imports over `import x`. The exceptions are `import cv2` and `import numpy as np`.
-- No type annotations should exist in the `.py` files and if the exist they should isolated in th `.pyi` files.
+- No type annotations should exist in the `.py` files and if they exist they should be isolated in the `.pyi` files.
 - The style should respect the black formatting.
 - The implementation should be done in a way that is compatible with the existing codebase.
 - The commenting style of the project is unique, try to keep commenting style consistent.
