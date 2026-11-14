@@ -14,7 +14,7 @@ class BaseAPIController(appier.Controller):
         return dict(time=time.time())
 
     @appier.route("/api/send", "POST", json=True)
-    @appier.ensure(token="admin")
+    @appier.ensure(token="mailme.send")
     def send(self):
         message = mailme.Message.new()
         message.approve()
@@ -22,7 +22,7 @@ class BaseAPIController(appier.Controller):
         return message.map()
 
     @appier.route("/api/to_json", ("GET", "POST"), json=True)
-    @appier.ensure(token="admin")
+    @appier.ensure(token="mailme.send")
     def to_json(self):
         sender = self.field("sender")
         receivers = self.field("receivers", cast=list)
