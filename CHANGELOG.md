@@ -13,12 +13,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-* Sending emails through the API needs a send-only permission instead of full admin access
-* Stop running the CI build against the Python release candidate
+*
 
 ### Fixed
 
 *
+
+## [0.1.9] - 2026-11-14
+
+### Changed
+
+* Sending emails through the API needs a send-only permission instead of full admin access
+* Stop running the CI build against the Python release candidate
 
 ## [0.1.8] - 2026-05-09
 
